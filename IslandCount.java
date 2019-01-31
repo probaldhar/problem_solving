@@ -22,7 +22,7 @@ class IslandCount {
 
         Boolean[][] visited = new Boolean[row][col];
 
-        Arrays.stream(visited).forEach(v -> Arrays.fill(v, false));      
+        Arrays.stream(visited).forEach(v -> Arrays.fill(v, false));
 
         int count = 0;
         for(int i = 0; i < row; i++) {

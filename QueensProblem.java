@@ -13,6 +13,7 @@ public class QueensProblem {
 	public void solve() {
 		
 		if (setQueens(0)) {
+			System.out.println("----------------");
 			printQueens();
 		} else {
 			System.out.println("There is no solution.");
@@ -21,6 +22,7 @@ public class QueensProblem {
 
 	private boolean setQueens(int colIndex) {
 		if ( colIndex == numOfQueens ) {
+			printQueens();
 			return true;
 		}
 		
@@ -85,7 +87,7 @@ public class QueensProblem {
 	
 	public static void main(String[] args) {
 		
-		QueensProblem queen = new QueensProblem(10);
+		QueensProblem queen = new QueensProblem(8);
 		queen.solve();
 		
 	}
