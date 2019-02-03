@@ -1,5 +1,6 @@
 package projects;
 
+import java.util.*;
 /**
  * 
  * leetcode link: https://leetcode.com/problems/word-search/
@@ -9,6 +10,27 @@ package projects;
 
 class WordSearch {
     
+	/**
+	 * A very very bad solution.
+	 * 
+	 * leetcode link: https://leetcode.com/problems/word-search-ii/
+	 */
+	public List<String> findWords(char[][] board, String[] words) {
+        
+        Set<String> uniqueResult = new HashSet<String>();
+        
+        for(String word: words) {
+            if ( exist(board, word) ) {
+                uniqueResult.add(word);
+            }
+        }
+        
+        return new ArrayList<String>(uniqueResult);
+    }
+	
+	/**
+	 * leetcode link: https://leetcode.com/problems/word-search/
+	 */
     public boolean exist(char[][] board, String word) {
         // Visited array to keep track of the visited nodes
         boolean[][] visited = new boolean[board.length][board[0].length];
