@@ -46,5 +46,6 @@ public class Combinations {
         int r = 3; 
         int n = arr.length; 
         printCombination(arr, n, r); 
+//        System.out.println('z' - 'a');
     }
 }
