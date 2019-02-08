@@ -1,5 +1,13 @@
 package projects;
 
+/**
+ * Find top K frequent elements from an array
+ * 
+ * Using HashMap and Priority Queue
+ * 
+ * Leetcode link: https://leetcode.com/problems/top-k-frequent-elements/
+ */
+
 import java.util.*;
 
 class TopKFrequentElements {
